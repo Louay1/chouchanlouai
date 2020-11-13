@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  height: 100vh;
+  width: 100vw;
+  background: #171717;
+}
+body .container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .profile-pic {
+  width: 150px;
+  height: 150px;
+  background: url(../img/pro.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: white 3px solid;
+  margin: 25px 0;
+}
+body .container .name, body .container .bio, body .container .thoughts, body .container .links, body .container .contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+body .container .name .field, body .container .bio .field, body .container .thoughts .field, body .container .links .field, body .container .contacts .field {
+  background: transparent;
+  border: 3px white solid;
+  width: 300px;
+  height: 30px;
+  margin: 0 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .container .name .field p, body .container .bio .field p, body .container .thoughts .field p, body .container .links .field p, body .container .contacts .field p {
+  padding: 0 15px;
+  color: white;
+}
+body .container .name .field-expanded, body .container .bio .field-expanded, body .container .thoughts .field-expanded, body .container .links .field-expanded, body .container .contacts .field-expanded {
+  background: transparent;
+  border: 3px white solid;
+  width: 300px;
+  min-height: 102px;
+  margin: 0 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+body .container .name .field-expanded p, body .container .bio .field-expanded p, body .container .thoughts .field-expanded p, body .container .links .field-expanded p, body .container .contacts .field-expanded p {
+  padding: 0 15px;
+  color: white;
+}
+body .foot {
+  width: 100vw;
+  background: #e9c46a;
+  height: 48px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

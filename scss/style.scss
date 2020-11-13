@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+$dark: #171717;
+$yellow: #e9c46a;
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fira Code', monospace;
+
+    height: 100vh;
+    width: 100vw;
+    background:$dark;
+
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .profile-pic{
+            width: 150px;
+            height: 150px;
+            background: url(../img/pro.jpg) no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            border: white 3px solid;
+            margin: 25px 0;
+        }
+
+        .name, .bio, .thoughts, .links, .contacts{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 10px;
+            
+            .field{
+                background: transparent;
+                border: 3px white solid;
+                width: 300px;
+                height: 30px;
+                margin: 0 19px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p{
+                    padding: 0 15px;
+                    color: white;
+                }
+            }
+
+            .field-expanded{
+                background: transparent;
+                border: 3px white solid;
+                width: 300px;
+                min-height: 102px;
+                margin: 0 19px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                p{
+                    padding: 0 15px;
+                    color: white;
+                }
+            }
+            
+        }
+    }
+
+    
+    .foot{
+        width:100vw;
+        background: $yellow;
+        height: 48px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+}
+
