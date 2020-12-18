@@ -1,7 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
-body {
+.flex {
   display: flex;
+}
+.flex-ver {
   flex-direction: column;
+}
+.flex-hor {
+  flex-direction: row;
+}
+
+.f-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.f-start {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+body {
   align-items: center;
   padding: 0;
   margin: 0;
@@ -10,68 +29,138 @@ body {
   height: 100vh;
   width: 100vw;
   background: #171717;
+  overflow-x: hidden;
+  color: white;
 }
 body .container {
   width: 80%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin: 0 0 80px 0;
+  padding: 0;
 }
 body .container .profile-pic {
   width: 150px;
   height: 150px;
-  background: url(../img/pro.jpg) no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-  border: white 3px solid;
   margin: 25px 0;
 }
+body .container .profile-pic img {
+  border-radius: 50%;
+  border: white 3px solid;
+  height: 150px;
+  width: 160px;
+}
 body .container .name, body .container .bio, body .container .thoughts, body .container .links, body .container .contacts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 10px;
-}
-body .container .name .field, body .container .bio .field, body .container .thoughts .field, body .container .links .field, body .container .contacts .field {
-  background: transparent;
-  border: 3px white solid;
-  width: 300px;
-  height: 30px;
-  margin: 0 19px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-body .container .name .field p, body .container .bio .field p, body .container .thoughts .field p, body .container .links .field p, body .container .contacts .field p {
-  padding: 0 15px;
-  color: white;
-}
-body .container .name .field-expanded, body .container .bio .field-expanded, body .container .thoughts .field-expanded, body .container .links .field-expanded, body .container .contacts .field-expanded {
-  background: transparent;
-  border: 3px white solid;
-  width: 300px;
-  min-height: 102px;
-  margin: 0 19px;
-  display: flex;
-  flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
 }
-body .container .name .field-expanded p, body .container .bio .field-expanded p, body .container .thoughts .field-expanded p, body .container .links .field-expanded p, body .container .contacts .field-expanded p {
-  padding: 0 15px;
-  color: white;
+body .container .name .image, body .container .bio .image, body .container .thoughts .image, body .container .links .image, body .container .contacts .image {
+  width: 15%;
+}
+body .container .name .image img, body .container .bio .image img, body .container .thoughts .image img, body .container .links .image img, body .container .contacts .image img {
+  width: 32px;
 }
 body .foot {
   width: 100vw;
   background: #e9c46a;
   height: 48px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: #171717;
+}
+body .field {
+  background: transparent;
+  border: 3px white solid;
+  height: 30px;
+  width: 85%;
+  align-items: center;
+  justify-content: start;
+}
+body .field p {
+  padding: 0 15px;
+  color: white;
+}
+body .field-expanded {
+  background: transparent;
+  border: 3px white solid;
+  width: 100%;
+  align-items: flex-start;
+  align-self: flex-end;
+  flex-wrap: wrap;
+}
+body .field-expanded p {
+  padding: 0 15px;
+  color: white;
+}
+body .box {
+  background: transparent;
+  border: 3px white solid;
+  width: 100%;
+  min-height: 30px;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+body .box p {
+  padding: 0 15px;
+  color: white;
+}
+body .box ul {
+  color: white;
+  list-style-type: "-";
+}
+body a {
+  color: white;
+  text-decoration: underline;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body a:hover {
+  color: #e9c46a;
+  text-decoration: none;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #171717;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #e9c46a;
+}
+
+form {
+  font-family: "Fira Code", monospace;
+}
+form .sender {
+  padding: 15px 20px;
+}
+form .sender .required:after {
+  content: "*";
+  color: #e9c46a;
+  display: inline;
+}
+form .sender input[type=text], form .sender input[type=email], form .sender textarea {
+  padding: 7px;
+  outline: none;
+  font-family: "Fira Code", monospace;
+}
+form .sender .btn {
+  height: 40px;
+  width: 74px;
+  background: #e9c46a;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+  border: none;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+form .sender .btn:hover {
+  border: #e9c46a 3px solid;
+  background: #171717;
+  color: #e9c46a;
 }
 
 /*# sourceMappingURL=style.css.map */

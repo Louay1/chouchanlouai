@@ -1,52 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <title>Chouchan Louai</title>
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <div class="container">
+<%- include("../partials/head") %>
+    <div class="container flex flex-ver">
         <div class="profile-pic">
+            <img src="../img/pro.jpg" alt="">
+        </div>
 
-        </div>
-        <div class="name">
-            <img src="../img/devf.svg" alt="">
-            <div class="field">
-                <p>chouchane louai</p>
-            </div>
-        </div>
-        <div class="bio">
-            <img src="../img/type.svg" alt="">
-            <div class="field-expanded">
+        <div class="bio flex flex-hor">
+            <div class="field-expanded flex flex-hor">
                 <p>
-                    a javascripter who doesn't love javascript that much<br>
+                    a javascripter who doesn't love javascript that much,
                     I enjoy ping pong as well
                 </p>
             </div>
         </div>
-        <div class="thoughts">
+        <div class="name flex flex-hor">
+            <img src="../img/devf.svg" alt="">
+            <div class="field flex flex-hor">
+                <p>
+                    <a href="#me">
+                        chouchane louai
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="thoughts flex flex-hor">
             <img src="../img/lamp.svg" alt="">
-            <div class="field">
-                <p>my thoughts</p>
+            <div class="field flex flex-hor">
+                <p>
+                    <a href="#thoughts">
+                        my thoughts
+                    </a>
+                </p>
             </div>
         </div>
-        <div class="links">
+        <div class="links flex flex-hor">
             <img src="../img/cata.svg" alt="">
-            <div class="field">
-                <p>link to portfolio/p>
+            <div class="field flex flex-hor">
+                <p>link to portfolio</p>
             </div>
         </div>
-        <div class="contacts">
+        <div class="contacts flex flex-hor">
             <img src="../img/share.svg" alt="">
-            <div class="field">
-                <p>contacts</p>
+            <div class="field flex flex-hor">
+                <p>
+                    <a href="#contacts">
+                        my contatcs
+                    </a>
+                </p>
             </div>
         </div>
     </div>
+    
+    <div class="container flex flex-ver">
+        <div id="me" class="name flex flex-hor">
+            <img src="../img/devf.svg" alt="">
+            <div class="field flex flex-hor">
+                <p>chouchane louai</p>
+            </div>
+        </div>
 
-    <footer class="foot">
-        <p>&copy; Chouchane Louai - 2020</p>
-    </footer>
-</body>
-</html>
+        <div class="box flex flex-hor">
+            <ul>
+                <li>software engineering student</li>
+                <li>ping-pong (table tennis) player</li>
+                <li>aiesec in algeria member</li>
+                <li>based on algeria</li>
+            </ul>
+        </div>
+
+        <div id="thoughts" class="thoughts flex flex-hor">
+            <img src="../img/lamp.svg" alt="">
+            <div class="field flex flex-hor">
+                <p>my thoughts</p>
+            </div>
+        </div>
+
+        <div class="box flex flex-hor">
+            <ul>
+                <li>i think life is a big program</li>
+                <li>healthy food is better for productivity</li>
+                <li>schrodinger’s cat actually died (sadly)</li>
+            </ul>
+        </div>
+
+        <div id="contacts" class="contacts flex flex-hor">
+            <img src="../img/share.svg" alt="">
+            <div class="field flex flex-hor">
+                <p>contacts</p>
+            </div>
+        </div>
+
+        <div class="box f-start flex flex-hor">
+            <ul>
+                <li>
+                    <a href="https://github.com/Louay1">github</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/romanzaint">facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/roman.zaint">instagram</a>
+                </li>
+                <li>
+                    <a href="https://dribbble.com/romanzaint">dribbble</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <%- include("emailform") %> 
+    
+    
+    <%- include("../partials/foot") %>
